@@ -11,5 +11,5 @@
 //hệ điều hành khác có thể sẽ khác như linux trả về số 8 bit thì -1 ra số khác
 int main()
 {
-return -1;
+	return -1;
 }
