@@ -6,7 +6,9 @@
 //}
 
 //BT1.2 trang 30
-
+//return khác 0 là lỗi chỉ cần biết vậy thôi
+//còn số âm do hệ điều hành trả về chuyển thành số ko dấu nên bị vậy.
+//hệ điều hành khác có thể sẽ khác như linux trả về số 8 bit thì -1 ra số khác
 int main()
 {
 return -1;
