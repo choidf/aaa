@@ -1,1 +1,10 @@
 Phần giải thích về 2 dấu << và >> trong sách em đọc không hiểu, rốt cuộc nó có tác dụng gì ?
+
+Ý là dấu   <<  trong khi dùng cout << a hoặc ostream là đưa a ra ngoài màn hình hoặc ostream khác như file.
+Khi lồng 2 dấu  << như vậy  cout << "a" << "b"; thì sẽ tương đương với (cout << "a")<<"b"; kết quả của (cout<<a)
+ngoài việc in ra màn hình thì còn là một cout khác nên nên (cout << "a")<< "b"; sẽ tương đương;
+in "a" ra màn hình, rồi cout << "b"; tiếp.
+
+
+Còn dấu >> khi dùng cin thì cũng tương tự nhưng dùng để đọc từ bàn phím (cin) hoặc file (istream) vào biến.
+Ví dụ: cin >> a; tức là đọc từ bàn phím rồi chép vào biến a; còn cin >> a >> b; thì tương đương cin >> a; cin >> b;
